@@ -35,17 +35,12 @@ public:
 	size_t get_capacity() const;
 	bool is_empty() const;
 	
-	// Clear the array by 
+	// Clear the array by calling the remove_at function.
+	// This is the worst way to clear the array, but I will try to create a better one.
 	void clear();
 	void print_sarray();
 };
 
-
-
-
-
-
-#endif // !SMARTARRAY_H
 
 template<typename T>
 inline SmartArray<T>::SmartArray(size_t initCap) {
@@ -158,3 +153,4 @@ inline void SmartArray<T>::print_sarray() {
 	else
 		std::cout << "Array is empty" << std::endl;
 }
+#endif // !SMARTARRAY_H
